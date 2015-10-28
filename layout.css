@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+header {
+	background-image:url(../images/banner.jpg);
+	background-position:center, center;
+	background-repeat:no-repeat;
+}
+header h1 {
+	padding-top:315px;
+	text-align:center;
+}
+
+nav {
+	float:left;
+	width:200px;
+}
+
+#wrapper {
+	width:1000px;
+	margin:auto;
+}
+nav li {
+	list-style:none;
+}
+main {
+	float:left;
+	width:800px;
+}
+footer {
+	text-align:center;
+	clear:both;
+}
