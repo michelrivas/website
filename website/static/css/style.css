@@ -1,4 +1,14 @@
-html { 
+@-moz-keyframes spin {
+    100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    100% {transform:rotate(360deg);}
+}
+
+body { 
   background: url(../images/img.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -6,31 +16,21 @@ html {
   background-size: cover;
 }
 
-
-
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
-    text-decoration: none;
-    color: initial;
-
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    margin-top: 20%;
-	margin-left: 47%;
-}
-
 h1{
-	text-align: center;
 	font-size: 48px;
 }
 
-h2{
-	text-align: center;
+a.button {
+    margin-top: 20%;
 }
-
+.spin{
+    animation: spin 2s infinite linear;
+    animation-fill-mode: both;
+}
+a.button:hover .spin{
+    animation-duration: .2s;
+}
+.glyphicon-cd{
+    width: 20px;
+    text-align: left;
+}
